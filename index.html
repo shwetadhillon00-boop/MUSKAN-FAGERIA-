@@ -1,302 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HAPPY BIRTHDAY MUSKAN FAGERIA </title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html, body{
-    width:100%;
-    height:100%;
-}
-
-body{
-    background-image: url('birthday.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.overlay{
-    min-height:100vh;
-    background:rgba(0,0,0,0.55);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-/* "Happy" Style - Clean Serif */
-.heading-happy {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 0px;
-    color: #ffffff;
-}
-
-/* "Birthday," Style - Pink Glowing Script */
-.heading-birthday {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4.5rem;
-    color: #ff65a3;
-    margin: -10px 0 0 0;
-    text-shadow: 0 0 10px rgba(255, 101, 163, 0.6), 0 0 20px rgba(255, 101, 163, 0.4);
-}
-
-/* "Muskan" Style - Gold Glowing Script */
-.heading-name {
-    font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
-    color: #ffe49e;
-    margin: -20px 0 20px 0;
-    text-shadow: 0 0 12px rgba(255, 228, 158, 0.7), 0 0 25px rgba(255, 228, 158, 0.4);
-}
-
-/* Subheadings - Playfair Serif */
-.subheading {
-    font-family: 'Playfair Display', serif;
-    color: #ff85b3;
-    font-size: 1.4rem;
-    font-style: italic;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-/* General text layout */
-.message-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #e0d0e0;
-    font-weight: 300;
-    margin-bottom: 25px;
-}
-
-/* Gold Tagline at the bottom */
-.tagline {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2.2rem;
-    color: #ffe49e;
-    margin: 25px 0;
-    text-shadow: 0 0 8px rgba(255, 228, 158, 0.5);
-}
-
-/* Dividers and Footers */
-.divider { color: #ff65a3; font-size: 1.2rem; margin: 20px 0; letter-spacing: 5px; }
-.footer-text { font-size: 0.9rem; color: #bfa3bf; font-style: italic; }
-
-.wish-box {
-    border: 1px solid #ff4181;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 25px 0;
-    background: rgba(255, 65, 163, 0.05);
-    box-shadow: inset 0 0 15px rgba(255, 65, 163, 0.1), 0 0 15px rgba(255, 65, 163, 0.1);
-}
-
-.wish-box-title {
-    color: #ff65a3;
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-<div class="birthday-card">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Muskan</title>
     
-    <div class="heading-happy">Happy</div>
-    <div class="heading-birthday">Birthday,</div>
-    <div class="heading-name">Muskan 💕</div>
-    
-    <div class="divider">ーーー 🌸 ーーー</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <div class="subheading">A Special Day for a Special Person 💕</div>
-    <p class="message-text">
-        Today is all about you! Wishing you a birthday filled with happiness, laughter, love, and unforgettable memories. ✨
-    </p>
+    <style>
+        /* Sets up the full background with your image blurred slightly behind */
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(rgba(19, 3, 18, 0.85), rgba(19, 3, 18, 0.85)), url('your-image-link-here.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-    <div class="wish-box">
-        <div class="wish-box-title">🎁 Birthday Wish</div>
-        <p class="message-text" style="margin: 0;">
-            May all your dreams come true and may this year bring you success, good health and endless reasons to smile. 💕
-        </p>
-    </div>
+        /* The transparent elegant card containing the text */
+        .birthday-container {
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            padding: 35px 25px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
 
-    <div class="tagline">You are amazing just the way you are!</div>
-    <div class="divider">ーーー 🤍 ーーー</div>
-    <div class="footer-text">With love & best wishes ♡</div>
+        /* "Happy Birthday" - Elegant Serif Header */
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
 
-</div>
+        /* "MUSKAN FAGERIA" - Pink Glowing Script Font */
+        .birthday-name {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4.2rem;
+            color: #ff65a3;
+            margin: 0 0 20px 0;
+            line-height: 1.1;
+            text-shadow: 0 0 10px rgba(255, 101, 163, 0.6), 0 0 20px rgba(255, 101, 163, 0.3);
+        }
 
-.card{
-    max-width:800px;
-    width:100%;
-    background:transparent;
-    backdrop-filter:none;
-    border-radius:0;
-    padding:40px;
-    text-align:center;
-    box-shadow:none;
-}
+        /* "CALM IN OUR CHAOS" - Subtitle style */
+        .sub-header {
+            font-family: 'Playfair Display', serif;
+            color: #ffb3d1;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
 
-h1{
-    font-size:4rem;
-    color:white;
-    text-shadow:0 0 15px #ff69b4;
-    margin-bottom:10px;
-}
+        /* Paragraph styles for standard greeting text */
+        .paragraph-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #e6dee6;
+            font-weight: 300;
+            margin: 0 0 25px 0;
+        }
 
-.name{
-    font-size:5rem;
-    color:#ffb6c1;
-    text-shadow:0 0 20px #ff69b4;
-    margin-bottom:25px;
-}
+        /* The prominent Glowing Birthday Wish border box */
+        .highlight-wish-box {
+            border: 1px solid #ff4181;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            background: rgba(255, 65, 163, 0.07);
+            box-shadow: inset 0 0 15px rgba(255, 65, 163, 0.1), 0 0 15px rgba(255, 65, 163, 0.1);
+        }
 
-.subtitle{
-    font-size:2rem;
-    margin-bottom:20px;
-    color:white;
-}
+        .wish-box-title {
+            color: #ff65a3;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
 
-p{
-    font-size:1.2rem;
-    line-height:1.8;
-    margin-bottom:20px;
-}
+        /* Gold Tagline Script at bottom */
+        .gold-tagline {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.3rem;
+            color: #ffe49e;
+            margin: 25px 0 15px 0;
+            text-shadow: 0 0 8px rgba(255, 228, 158, 0.5);
+        }
 
-.box{
-    margin-top:25px;
-    padding:20px;
-    border:none;
-    background:none;
-}
-    
-.footer{
-    margin-top:30px;
-    font-size:1.3rem;
-}
-
-.stars{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    pointer-events:none;
-    overflow:hidden;
-}
-
-.star,
-.heart{
-    position:absolute;
-    animation:float 8s linear infinite;
-    opacity:0.8;
-}
-
-@keyframes float{
-    from{
-        transform:translateY(100vh);
-    }
-    to{
-        transform:translateY(-100px);
-    }
-}
-
-@media(max-width:768px){
-
-    h1{
-        font-size:2.5rem;
-    }
-
-    .name{
-        font-size:3rem;
-    }
-
-    .subtitle{
-        font-size:1.4rem;
-    }
-
-    p{
-        font-size:1rem;
-    }
-}
-</style>
+        .footer-credit {
+            font-size: 0.85rem;
+            color: #a692a6;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="stars">
+    <div class="birthday-container">
+        
+        <h1 class="main-title">Happy Birthday 🎉</h1>
+        <h2 class="birthday-name">Muskan Fageria</h2>
+        
+        <div class="sub-header">Calm in our chaos 🤍</div>
+        
+        <p class="paragraph-text">
+            Dear Muskan,<br>
+            Today is all about you. May your birthday be filled with happiness, laughter, love, and unforgettable memories.
+        </p>
 
-<span class="star" style="left:5%;font-size:20px;">⭐</span>
-<span class="heart" style="left:5%;font-size:18px;">🎊</span>
-<span class="star" style="left:5%;font-size:24px;">✨</span>
-<span class="heart" style="left:15%;font-size:18px;">💕</span>
-<span class="star" style="left:15%;font-size:20px;">⭐</span>
-<span class="heart" style="left:35%;font-size:18px;">💗</span>
-<span class="star" style="left:25%;font-size:22px;">✨</span>
-<span class="heart" style="left:75%;font-size:18px;">💖</span>
-<span class="star" style="left:85%;font-size:20px;">⭐</span>
-<span class="heart" style="left:95%;font-size:18px;">💕</span>
+        <div class="highlight-wish-box">
+            <div class="wish-box-title">🎁 Birthday Wish</div>
+            <p class="paragraph-text" style="margin: 0;">
+                Wishing you a journey full of positivity, better health, and endless reasons to smile. 💕✨
+            </p>
+        </div>
 
-</div>
+        <div class="gold-tagline">You are amazing just the way you are! ✨💖</div>
 
-<div class="overlay">
+        <div class="footer-credit">
+            Made by SHWETA DHILLON with ♡
+        </div>
 
-<div class="card">
-
-<h1>Happy Birthday🎊</h1>
-
-<div class="name">MUSKAN FAGERIA</div>
-
-<div class="subtitle">
-CALM IN OUR CHAOS 🤍
-</div>
-
-<p>
-Dear Muskan,
-<br><br>
-Today is all about you. May your birthday be filled with happiness,
-laughter, love, and unforgettable memories.
-</p>
-
-<div class="box">
-
-<h2>🎁 Birthday Wish</h2>
-
-<br>
-
-<p>
-Wishingyou a journeyfull of positivity, a better health and endless reasonsto smile.
-✨💖⭐
-</p>
-
-</div>
-
-<p style="margin-top:25px;">
-You are amazing just the way you are! ⭐💕✨
-</p>
-
-<div class="footer">
-Made by SHWETA DHILLON with ♡
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </body>
 </html>
+
