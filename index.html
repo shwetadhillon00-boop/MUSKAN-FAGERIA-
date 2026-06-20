@@ -1,32 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Muskan</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Muskan</title>
 
-    <style>
-        /* Sets up the full background with your image blurred slightly behind */
-        body {
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(rgba(19, 3, 18, 0.85), rgba(19, 3, 18, 0.85)), url('your-image-link-here.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #ffffff;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        /* Background photo*/
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: url('birthday.jpg') center/cover no-repeat fixed;
+}
+
+/* dark overlay */
+.overlay {
+    min-height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main card */
+.birthday-container {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* titles */
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+.birthday-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #ff65a3;
+    text-shadow: 0 0 10px rgba(255,101,163,0.6);
+}
+
+.sub-header {
+    color: #ffb3d1;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* text */
+.paragraph-text {
+    line-height: 1.6;
+    color: #e6dee6;
+}
+
+/* gallery */
+.photo-gallery {
+    display: grid;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.photo-card {
+    background: rgba(255,255,255,0.08);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-card h3 {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    color: #ffb3d1;
+}
+
+/* wish box */
+.highlight-wish-box {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ff4181;
+    background: rgba(255,65,163,0.08);
+}
+
+/* final message */
+.final-message {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.6);
+}
+
+.final-message .warning {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.final-message .title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.footer-credit {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+</style>
+</head>
+/* Background photo*/
 body{
     background-image: url('birthday.jpg');
     background-size: cover;
@@ -42,126 +140,104 @@ body{
     align-items:center;
     padding:20px;
 }
-
-        /* The transparent elegant card containing the text */
-        .birthday-container {
-            max-width: 450px;
-            width: 100%;
-            text-align: center;
-            padding: 35px 25px;
-            box-sizing: border-box;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.04);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        /* "Happy Birthday" - Elegant Serif Header */
-        .main-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.6rem;
-            font-weight: 700;
-            margin: 0 0 5px 0;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-
-        /* "MUSKAN FAGERIA" - Pink Glowing Script Font */
-        .birthday-name {
-            font-family: 'Great Vibes', cursive;
-            font-size: 4.2rem;
-            color: #ff65a3;
-            margin: 0 0 20px 0;
-            line-height: 1.1;
-            text-shadow: 0 0 10px rgba(255, 101, 163, 0.6), 0 0 20px rgba(255, 101, 163, 0.3);
-        }
-
-        /* "CALM IN OUR CHAOS" - Subtitle style */
-        .sub-header {
-            font-family: 'Playfair Display', serif;
-            color: #ffb3d1;
-            font-size: 1.2rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        /* Paragraph styles for standard greeting text */
-        .paragraph-text {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: #e6dee6;
-            font-weight: 300;
-            margin: 0 0 25px 0;
-        }
-
-        /* The prominent Glowing Birthday Wish border box */
-        .highlight-wish-box {
-            border: 1px solid #ff4181;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 25px 0;
-            background: rgba(255, 65, 163, 0.07);
-            box-shadow: inset 0 0 15px rgba(255, 65, 163, 0.1), 0 0 15px rgba(255, 65, 163, 0.1);
-        }
-
-        .wish-box-title {
-            color: #ff65a3;
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        /* Gold Tagline Script at bottom */
-        .gold-tagline {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.3rem;
-            color: #ffe49e;
-            margin: 25px 0 15px 0;
-            text-shadow: 0 0 8px rgba(255, 228, 158, 0.5);
-        }
-
-        .footer-credit {
-            font-size: 0.85rem;
-            color: #a692a6;
-            margin-top: 20px;
-            letter-spacing: 1px;
-        }
-    </style>
-</head>
 <body>
 
-    <div class="birthday-container">
-        
-        <h1 class="main-title">Happy Birthday 🎉</h1>
-        <h2 class="birthday-name">Muskan Fageria</h2>
-        
-        <div class="sub-header">Calm in our chaos 🤍</div>
-        
-        <p class="paragraph-text">
-            Dear Muskan,<br>
-            Today is all about you. May your birthday be filled with happiness, laughter, love, and unforgettable memories.
-        </p>
+<div class="overlay">
+<div class="birthday-container">
 
-        <div class="highlight-wish-box">
-            <div class="wish-box-title">🎁 Birthday Wish</div>
-            <p class="paragraph-text" style="margin: 0;">
-                Wishing you a journey full of positivity, better health, and endless reasons to smile. 💕✨
-            </p>
+    <h1 class="main-title">Happy Birthday 🎊</h1>
+    <div class="birthday-name">MUSKAN FAGERIA</div>
+    <div class="sub-header">Calm in our chaos 🤍</div>
+
+    <p class="paragraph-text">
+        Dear Muskan,<br>
+        Today is all about you. May your day be full of happiness, love and memories.
+    </p>
+
+    <!-- PHOTO GALLERY -->
+    <div class="photo-gallery">
+
+        <div class="photo-card">
+            <img src="littleone.jpg">
+            <h3>Little you 🌸</h3>
         </div>
 
-        <div class="gold-tagline">You are amazing just the way you are! ✨💖</div>
+        <div class="photo-card">
+            <img src="9th.jpg">
+            <h3>Back then ✨</h3>
+        </div>
 
-        <div class="footer-credit">
-            Made by SHWETA DHILLON with ♡
+        <div class="photo-card">
+            <img src="birthdaycelebration.jpg">
+            <h3>Here’s to you 🥂</h3>
+        </div>
+        
+        <div class="photo-card">
+        <img src="teachersday.jpg" alt="Photo 3">
+        <h3>♡</h3>
+    </div>
+
+        <div class="photo-card">
+            <img src="adopted.jpg">
+            <h3>Officially adopted by dear ma'am.</h3>
+        </div>
+
+        <div class="photo-card">
+            <img src="foddy.jpg">
+            <h3>The food was waiting....you were posing</h3>
+        </div>
+
+        <div class="photo-card">
+            <img src="lastdays.jpg">
+            <h3>One last memory of a Beautiful era 💫</h3>
+        </div>
+
+        <div class="photo-card">
+            <img src="Marriage.jpg">
+            <h3>Beyond goodbyes..!!</h3>
         </div>
 
     </div>
 
+    <!-- WISH BOX -->
+    <div class="highlight-wish-box">
+        <h3>From All of Us 🌷</h3>
+        <p class="paragraph-text">
+            Wishing you happiness, growth, peace, and endless smiles.
+        </p>
+    </div>
+
+    <!-- FINAL MESSAGE -->
+    <div class="final-message">
+        <div class="warning">🚨 IMPORTANT ANNOUNCEMENT 🚨</div>
+
+        <div class="title">थांबा थांबा!</div>
+
+        <p class="paragraph-text">
+            This was made with love, memories, and a little sleep deprivation.<br>
+            Although the creator is not professional but tried its best.
+        </p>
+
+        <p class="paragraph-text">
+            The scrolling was free.<br>
+            But a compliment is <b>mandatory</b>.
+        </p>
+
+        <p class="paragraph-text">
+            Failure may result in developer-issued <b>श्राप 🔮</b>
+        </p>
+
+        <p class="paragraph-text">
+            👀 Nazar lagana | Emotional blackmail | Silent treatment | and many more.....!!
+        </p>
+    </div>
+
+    <div class="footer-credit">
+        Made by SHWETA DHILLON with ♡
+    </div>
+
+</div>
+</div>
+
 </body>
 </html>
-
