@@ -12,7 +12,7 @@
 <style>
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     background: url('birthday.jpg') center/cover no-repeat fixed;
@@ -21,10 +21,11 @@ body {
 /* dark overlay */
 .overlay {
     min-height: 100vh;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.55);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 /* main card */
@@ -80,6 +81,7 @@ body {
 .photo-card img {
     width: 100%;
     border-radius: 10px;
+    display: block;
 }
 
 .photo-card h3 {
@@ -117,35 +119,22 @@ body {
     margin: 10px 0;
 }
 
+/* footer */
 .footer-credit {
     margin-top: 20px;
     font-size: 0.8rem;
     opacity: 0.7;
 }
+</style>
+</head>
 
-/* Background photo*/
-body{
-    background-image: url('birthday.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.overlay{
-    min-height:100vh;
-    background:rgba(0,0,0,0.55);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
 <body>
 
 <div class="overlay">
 <div class="birthday-container">
 
     <h1 class="main-title">Happy Birthday 🎊</h1>
-    <div class="birthday-name">Muskan Fageria </div>
+    <div class="birthday-name">Muskan Fageria</div>
     <div class="sub-header">Calm in our chaos 🤍</div>
 
     <p class="paragraph-text">
@@ -157,42 +146,42 @@ body{
     <div class="photo-gallery">
 
         <div class="photo-card">
-            <img src="littleone.jpg">
+            <img src="littleone.jpg" alt="Little you">
             <h3>Little you 🌸</h3>
         </div>
 
         <div class="photo-card">
-            <img src="9th.jpg">
+            <img src="9th.jpg" alt="Old memory">
             <h3>Back then ✨</h3>
         </div>
 
         <div class="photo-card">
-            <img src="birthdaycelebration.jpg">
+            <img src="birthdaycelebration.jpg" alt="Birthday celebration">
             <h3>Here’s to you 🥂</h3>
         </div>
-        
-        <div class="photo-card">
-        <img src="teachersday.jpg" alt="Photo 3">
-        <h3>♡</h3>
-    </div>
 
         <div class="photo-card">
-            <img src="adopted.jpg">
+            <img src="teachersday.jpg" alt="Teachers day">
+            <h3>♡</h3>
+        </div>
+
+        <div class="photo-card">
+            <img src="adopted.jpg" alt="Memory">
             <h3>Officially adopted by dear ma'am.</h3>
         </div>
 
         <div class="photo-card">
-            <img src="foddy.jpg">
-            <h3>The food was waiting....you were posing</h3>
+            <img src="foddy.jpg" alt="Food moment">
+            <h3>The food was waiting... you were posing</h3>
         </div>
 
         <div class="photo-card">
-            <img src="lastdays.jpg">
+            <img src="lastdays.jpg" alt="Last days memory">
             <h3>One last memory of a Beautiful era 💫</h3>
         </div>
 
         <div class="photo-card">
-            <img src="Marriage.jpg">
+            <img src="Marriage.jpg" alt="Memory">
             <h3>Beyond goodbyes..!!</h3>
         </div>
 
